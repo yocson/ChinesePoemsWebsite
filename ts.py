@@ -12,11 +12,11 @@ def index():
 
 @app.route('/poems')
 def poems():
-    return render_template('poems.html')
+    return render_template('poemlist.html')
 
-@app.route('/poems/<name>')
-def poem(name):
-    return '<h1>Hello, %s</h1>' %name
+@app.route('/poems/<title>')
+def poem(title):
+    return render_template('poem.html', title=title)
 
 @app.route('/poets')
 def poets():
