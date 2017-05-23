@@ -1,11 +1,10 @@
 {% extends "base.html" %}
 
-{ % block scripts % }
+{% block scripts %}
 {{ super() }}
 <script type="text/javascript" src="static/poems.js"></script>
-<script src="static/jquery-3.1.0.min.js"></script>
-<script src="static/template.js"></script>
-{ % endblock % }
+<script type="text/javascript" src="static/template.js"></script>
+{% endblock %}
 
 {% block content %}
 <div class="container">
@@ -13,39 +12,19 @@
 		<div class="col-md-4 column">
             <h1>乐府</h1>
             <div class="list-group">
-                <a href="#" class="list-group-item">Home</a>
-                <a href="#" class="list-group-item">Home</a>
-                <a href="#" class="list-group-item">Home</a>
-                <a href="#" class="list-group-item">Home</a>
-                <a href="#" class="list-group-item">Home</a>
-                <a href="#" class="list-group-item">Home</a>
-                <a href="#" class="list-group-item">Home</a>
 			</div>
 		</div>
 		<div class="col-md-4 column">
             <h1>五言绝句</h1>
             <div class="list-group">
-                <a href="#" class="list-group-item">Home</a>
-                <a href="#" class="list-group-item">Home</a>
-                <a href="#" class="list-group-item">Home</a>
-                <a href="#" class="list-group-item">Home</a>
-                <a href="#" class="list-group-item">Home</a>
-                <a href="#" class="list-group-item">Home</a>
-                <a href="#" class="list-group-item">Home</a>
 			</div>
 		</div>
 		<div class="col-md-4 column">
             <h1>七言绝句</h1>
             <div class="list-group">
-                <a href="#" class="list-group-item">Home</a>
-                <a href="#" class="list-group-item">Home</a>
-                <a href="#" class="list-group-item">Home</a>
-                <a href="#" class="list-group-item">Home</a>
-                <a href="#" class="list-group-item">Home</a>
-                <a href="#" class="list-group-item">Home</a>
-                <a href="#" class="list-group-item">Home</a>
 			</div>
 		</div>
 	</div>
 </div>
 {% endblock %}
+
