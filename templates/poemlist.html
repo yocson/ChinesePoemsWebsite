@@ -2,29 +2,104 @@
 
 {% block scripts %}
 {{ super() }}
-<script type="text/javascript" src="static/poems.js"></script>
+<script type="text/javascript" src="static/poemlist.js"></script>
 <script type="text/javascript" src="static/template.js"></script>
 {% endblock %}
 
 {% block content %}
 <div class="container">
 	<div class="row clearfix">
-		<div class="col-md-4 column">
-            <h1>乐府</h1>
-            <div class="list-group">
-			</div>
-		</div>
-		<div class="col-md-4 column">
-            <h1>五言绝句</h1>
-            <div class="list-group">
-			</div>
-		</div>
-		<div class="col-md-4 column">
-            <h1>七言绝句</h1>
-            <div class="list-group">
-			</div>
+		<div class="col-md-12 column">
+            <div class="col-md-4 column">
+                <div class="panel-group" id="panel-440401">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-440401" href="#panel-element-765521">五言绝句</a>
+                        </div>
+                        <div id="panel-element-765521" class="panel-collapse in">
+                            <div class="panel-body">
+                                <div class="list-group" id="wyjj">
+			                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-440401" href="#panel-element-406608">七言绝句</a>
+                        </div>
+                        <div id="panel-element-406608" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="list-group" id="qyjj">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 column">
+                <div class="panel-group" id="panel-440402">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-440402" href="#panel-element-765522">五言律诗</a>
+                        </div>
+                        <div id="panel-element-765522" class="panel-collapse in">
+                            <div class="panel-body">
+                                <div class="list-group" id="wyls">
+			                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-440402" href="#panel-element-406609">七言律诗</a>
+                        </div>
+                        <div id="panel-element-406609" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="list-group" id="qyls">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 column">
+                <div class="panel-group" id="panel-440403">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-440403" href="#panel-element-765523">五言古诗</a>
+                        </div>
+                        <div id="panel-element-765523" class="panel-collapse in">
+                            <div class="panel-body">
+                                <div class="list-group" id="wygs">
+			                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-440403" href="#panel-element-406600">七言古诗</a>
+                        </div>
+                        <div id="panel-element-406600" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="list-group" id="qygs">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-440403" href="#panel-element-406611">乐府</a>
+                        </div>
+                        <div id="panel-element-406611" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="list-group" id="yf">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 		</div>
 	</div>
 </div>
 {% endblock %}
-
