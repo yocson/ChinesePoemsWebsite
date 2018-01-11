@@ -3,5 +3,5 @@
   <component name="IpnbSettings">
     <option name="workingDirectory" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.5.2 (~/.pyenv/versions/3.5.2/bin/python)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 2.7.10 (/System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7)" project-jdk-type="Python SDK" />
 </project>

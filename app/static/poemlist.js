@@ -20,6 +20,8 @@ $(document).ready(function () {
                 $("#yf").append("<a href=\"poems/"+data.title+"\" class=\'list-group-item\'>"+data.title +"-"+data.author+"</a>");
         });
     });
+
+    $(".nav-bar-btn").toggleClass("active");
 });
 
 

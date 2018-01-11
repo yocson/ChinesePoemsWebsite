@@ -1,26 +1,40 @@
 {% extends "bootstrap/base.html" %}
 
-{% block title %}唐诗三百首{% endblock %}
+<html>
+    <head>
+        {% block title %}唐诗三百首{% endblock %}
+        {% block head %}
+            {{ super() }}
+            <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='base.css') }}"/>
+        {% endblock %}
+    </head>
+    <body>
+        {% block navbar %}
+            <div class="navbar navbar-inverse" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/">唐诗三百首</a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-bar-btn active"><a href="/" >主页</a></li>
+                            <li class="nav-bar-btn"><a href="/poems">诗目</a></li>
+                            <li><a href="#">诗人</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        {% endblock %}
+    </body>
 
-{% block navbar %}
-<div class="navbar navbar-inverse" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">唐诗三百首</a>
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="/">主页</a></li>
-                <li><a href="/poems">诗目</a></li>
-                <!--<li><a href="/">诗人</a></li>-->
-            </ul>
-        </div>
-    </div>
-</div>
-{% endblock %}
+</html>
+
+
+
+
