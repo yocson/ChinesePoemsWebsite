@@ -10,9 +10,10 @@ $(document).ready(function () {
         for (var i = 0; i < 4; i++){
             var rand = Math.floor(Math.random() * result.length)
             console.log(result[rand]);
-            var str1 = "<h3>" + result[rand].title + "-" + result[rand].author+ "</h3><br>";
-            var str2 = "<p>" + result[rand].poem.replace(/\。/g,"\。</br>")+ "</p>";
-            var str = "<div class=\"col-lg-3 col-md-6 column\">" + str1 + str2 + "</div>";
+            var str1 = "<h3>" + result[rand].title + "</h3>";
+            var str2 = "<h4>" + result[rand].author+ "</h4>";
+            var str3 = "<p>" + result[rand].poem.replace(/\。/g,"\。</br>")+ "</p>";
+            var str = "<div class=\"col-lg-3 col-md-6 column random\">" + str1 + str2 +str3 + "</div>";
             $(".randomPoems").append(str);
         }
     });

@@ -1,0 +1,35 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}唐诗三百首{% endblock %}
+
+{% block content %}
+    <div id="landing-header">
+        <a href="/home"><h1>唐诗三百首</h1></a>
+    </div>
+
+    <ul class="slideshow">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    </ul>
+{% endblock%}
+
+{% block scripts %}
+    {{ super() }}
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='start.css') }}"/>
+    <script
+        src="https://code.jquery.com/jquery-3.3.0.min.js"
+        integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $("h1").hover(function(){
+            $(this).text("开始探索");
+        }, function(){
+            $(this).text("唐诗三百首");
+        });
+    </script>
+
+{% endblock %}

@@ -1,0 +1,40 @@
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    color: inherit;
+    background-color: rgba(238, 238, 238, 0);
+}
+
+.randomPoems {
+   width: 90%;
+   margin: 0 auto;
+}
+
+.page-header h1 {
+    background-color: #921406;
+    color: white;
+    padding: 10px;
+    letter-spacing: 5px;
+}
+
+.column {
+    text-align: center;
+}
+
+.jumbotron h1 {
+    text-align: center;
+}
+
+#daily {
+    padding: 0;
+}
+
+.random {
+    background-color: rgb(146, 20, 7);
+    color: white;
+    padding: 0;
+    width: 24%;
+    margin: 0 0.5%;
+}
+

@@ -5,29 +5,18 @@
 {% block content %}
 <div class="container">
     <div class="jumbotron">
-        <h1>唐诗的世界</h1>
+        <h1>唐诗三百首</h1>
         <p>唐朝（618年—907年）二百九十年間，是中國詩歌發展的黃金時代，雲蒸霞蔚，名家輩出，唐詩數量多達五萬首。孫琴安《唐詩選本六百種提要·自序》指出，“唐詩選本經大量散佚，至今尚存三百餘種。當中最流行而家傳戶曉的，要算《唐詩三百首》。”《唐詩三百首》选诗范围相当广泛，收錄了77家詩，共311首，在數量以杜甫詩數多，有39首、李白詩33首、王維詩29首、李商隱詩24首、孟浩然诗14首。是仿《詩經》三百篇（共305篇）之作，從前是家絃戶誦的兒童詩教啟蒙書，所以比较浅显，读者容易接受，俗話說：“熟讀唐詩三百首，不會作詩也會吟。”（原序作：「熟讀唐詩三百首，不會吟詩也會吟。」）是中小學生接觸中國古典詩歌最好的入門書籍。</p>
-        <div class="container">
-	        <div class="row clearfix">
-		        <div class="col-md-12 column"  align="right">
-			        <div class="btn-group">
-				        <button class="btn btn-default" href="https://zh.wikipedia.org/wiki/唐诗三百首" type="button">维基百科</button>
-                        <button class="btn btn-default" href="http://baike.baidu.com/link?url=jrERh8X9Hmm-AlHorlQIdr-yP5fB_BHpeYJkkN-Y1HhXHQLq4m74b-VSrBV9PJSwyiGiyI9Ujq6zovZpt4TEXqQFvrQoTonibktsSBV8Lp1aHXRyMsb24f_EQljZLZNk8gSUYIAUAYKwCbPzyv2RUa" type="button">百度百科</button>
-                        <button class="btn btn-default" href="https://book.douban.com/subject/1146536/" type="button">豆瓣</button>
-			        </div>
-		        </div>
-            </div>
-        </div>
     </div>
 </div>
 
 <div class="container">
 	<div class="row clearfix randomPoems">
-        <div class="col-md-12 column">
+        <div class="col-md-12 column" id="daily">
 			<div class="page-header">
-				<h2 align="center">
+				<h1 align="center">
 					今日唐诗
-				</h2>
+				</h1>
 			</div>
 		</div>
 	</div>
@@ -38,4 +27,5 @@
 {% block scripts %}
 {{ super() }}
 <script type="text/javascript" src="static/index.js"></script>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='index.css') }}"/>
 {% endblock %}

@@ -1,0 +1,94 @@
+body {
+    background-color: #000;
+}
+
+#landing-header {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 40vh;
+}
+
+#landing-header h1 {
+    color: #fff;    
+    font-size: 6em;
+    font-family: kai;
+    font-weight: bold;
+    background: rgba(148, 0, 0, 0.65);
+    margin: 0 auto;
+    padding: 10px;
+    width: 60%;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.btn {
+    font-family: kai;
+}
+
+.slideshow { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.slideshow li { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 50s linear infinite; 
+}
+
+.slideshow li:nth-child(1) { 
+    background-image: url(http://wenzhengwenhua.com/data/attachment/portal/201608/16/222343bpcwzxpcav99a1cx.jpg) 
+}
+.slideshow li:nth-child(2) { 
+     background-image: url(https://ximg.smso.cc/wp-content/uploads/2017/06/a47fc7903f2b483390ba17ce2df1b58e_th.png);
+    animation-delay: 10s; 
+}
+.slideshow li:nth-child(3) { 
+    background-image: url(http://p0.ifengimg.com/pmop/2017/0811/6E98A1AB2B4DF277340413EFD75D747DB888D5B8_size110_w1048_h664.jpeg);
+    animation-delay: 20s; 
+}
+.slideshow li:nth-child(4) { 
+    background-image: url(https://i.pinimg.com/564x/85/db/b1/85dbb1f33894218cd0ad8b6f78912205--chinese-painting-google-images.jpg);
+    animation-delay: 30s; 
+}
+.slideshow li:nth-child(5) { 
+    background-image: url(http://minghua.zhshw.com/10/bulian/01.jpg);
+    animation-delay: 40s; 
+}
+
+@keyframes imageAnimation { 
+    0% { 
+      opacity: 0; 
+      animation-timing-function: ease-in;
+    }
+    10% {
+      opacity: 1;
+      animation-timing-function: ease-out;
+    }
+    20% {
+      opacity: 1
+    }
+    30% {
+      opacity: 0
+    }
+}
