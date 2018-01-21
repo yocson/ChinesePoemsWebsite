@@ -13,7 +13,7 @@ $(document).ready(function () {
             var str1 = "<h3>" + result[rand].title + "</h3>";
             var str2 = "<h4>" + result[rand].author+ "</h4>";
             var str3 = "<p>" + result[rand].poem.replace(/\。/g,"\。</br>")+ "</p>";
-            var str = "<div class=\"col-lg-3 col-md-6 column random\">" + str1 + str2 +str3 + "</div>";
+            var str = "<div class=\"col-lg-3 col-sm-6 column random\">" + str1 + str2 +str3 + "</div>";
             $(".randomPoems").append(str);
         }
     });
