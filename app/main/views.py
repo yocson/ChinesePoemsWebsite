@@ -1,4 +1,3 @@
-#coding=gbk  
 from flask import render_template, session, redirect, url_for
 from . import main
 from .. import db
@@ -25,9 +24,8 @@ def poem(title):
 
 @main.route('/create')
 def create():
-    str = "你好"
     p = Poem(
-        title = unicode(str, "gbk"),
+        title = '你好',
         content = "dfdd",
         author = "asdf",
         category = "asdf"
@@ -38,5 +36,5 @@ def create():
 
 @main.route('/showdb')
 def showdb():
-    p = Poem.query.all()[1].title
+    p = Poem.query.all()[-1].title
     return "insert" + p
