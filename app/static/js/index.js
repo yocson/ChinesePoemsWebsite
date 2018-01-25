@@ -1,12 +1,6 @@
 $(document).ready(function () {
     var title = decodeURI(document.URL.split('/').pop());
     $.getJSON("../static/poems.json",function(result){
-        // $.each(result, function(i, data){
-        //     if (data.title == title){
-        //         $(".author").append(data.author);
-        //         $(".poem").append(data.poem.replace(/\。/g,"\。</br>"));
-        //     };
-        // });
         for (var i = 0; i < 4; i++){
             var rand = Math.floor(Math.random() * result.length)
             console.log(result[rand]);
