@@ -3,12 +3,18 @@ from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
 
 bootstrap = Bootstrap()
-
+db = SQLAlchemy()
 
 def create_app():
     app = Flask(__name__)
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/test'
+    app.config['DEBUG'] = True
     
+<<<<<<< HEAD
     #app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:localhost/test'
+=======
+    db.init_app(app)
+>>>>>>> development
     bootstrap.init_app(app)
     app.static_folder = 'static'
 

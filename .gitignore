@@ -104,4 +104,9 @@ new_env/
 # mypy
 .mypy_cache/
 venv/pip-selfcheck.json
+<<<<<<< HEAD
 .idea
+=======
+.idea
+
+>>>>>>> development

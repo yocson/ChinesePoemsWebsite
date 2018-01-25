@@ -7,10 +7,10 @@
 	<div class="row clearfix">
 		<div class="col-md-12 column">
             <div class="jumbotron">
-                <h1 align="center">
+                <h1 align="center" style="color:#921406">
                     {{title}}
                 </h1>
-                <h3 class="author" align="center"></h3>
+                <h3 class="author"  align="center"></h3>
                 <p class="poem" align="center"></p>
             </div>
         </div>
@@ -20,7 +20,7 @@
 
 {% block scripts %}
     {{ super() }}
-    <script type="text/javascript" src="../static/poem.js"></script>
-    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='poem.css') }}"/>
+    <script type="text/javascript" src="../static/js/poem.js"></script>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/poem.css') }}"/>
 {% endblock %}
 
