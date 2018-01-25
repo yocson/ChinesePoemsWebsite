@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content%}
+    <div class="container">
+        <h1 style="text-align:center">搜索结果</h1>
+        {% if data:%}
+            <div class="list-group" style="width: 90%; margin:0 auto">
+                {% for poem in data:%}
+                    <a href=poems/{{ poem['title'] }} class="list-group-item list-group-item-action flex-column align-items-start ">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h3 class="mb-1" style="color:#921406">{{ poem['title'] }}</h3>
+                        <h4>{{ poem['author'] }}</h4>
+                    </div>
+                    <h5 class="mb-1">{{ poem['poem'] }}</h5>
+                    </a>
+                {% endfor %}    
+            </div>
+            <!-- {% for poem in data:%}
+                <a href = poems/{{ poem['title'] }} ><h3>{{ poem['title'] }} - {{ poem['author'] }}</h3></a>
+                <h4>{{ poem['poem'] }}</h4>
+            {% endfor %} -->
+        {% else %}
+            <h2>没有匹配项...</h2>
+        {% endif %}
+        
+    </div>
+{% endblock%}
+
+
