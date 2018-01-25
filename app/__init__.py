@@ -10,11 +10,7 @@ def create_app():
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/test'
     app.config['DEBUG'] = True
     
-<<<<<<< HEAD
     #app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:localhost/test'
-=======
-    db.init_app(app)
->>>>>>> development
     bootstrap.init_app(app)
     app.static_folder = 'static'
 
